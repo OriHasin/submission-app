@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+dist/
+.env
+logs/
+
+# Frontend
+build/
+.vscode/
+.DS_Store
+
+
+*.http
+
+
