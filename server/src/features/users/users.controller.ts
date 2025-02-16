@@ -14,18 +14,18 @@ export class UsersController {
   @HttpCode(HttpStatus.CREATED)
   async create(@Body() createUserDto: CreateUserDto, @Req() req: Request) {
     try {
-      
-      const enrichedData: EnrichUserDto = {
-        ...createUserDto,
-        ipAddress: req.ip,
-        userAgent: req.headers['user-agent'],
-      };
 
-      return await this.usersService.create(enrichedData);
-      //TODO: Notify all clients via WebSocket
+        const enrichedData: EnrichUserDto = {
+          ...createUserDto,
+          ipAddress: req.ip,
+          userAgent: req.headers['user-agent'],
+        };
+
+        const response =  await this.usersService.create(enrichedData);
+        return response;
     
     } catch (error) {
-      throw new HttpException("Error creating user", HttpStatus.BAD_REQUEST);
+        throw new HttpException("Error creating user", HttpStatus.BAD_REQUEST);
     }
   }
 
