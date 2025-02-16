@@ -27,17 +27,15 @@ const UserForm = () => {
             favoriteTennisPlayer: favTennisPlayerRef.current.value
         };
 
+
         // Send user to the backend and set message state based on the response
-        try {
-            const response = await createUser(user);
-            if (response?.status === 201) {
-                setMessage("User successfully created!");
-            } else {
-                setMessage("User creation failed.");
-            }
-        } catch (error) {
-            setMessage("Error submitting form. Try again.");
+        const response = await createUser(user);
+        if (response.success) {
+            setMessage("✅ User successfully created!");
+        } else {
+            setMessage(`❌ ${response.statusCode} - ${response.errorMessage}`);;
         }
+        
     };
 
 
@@ -50,16 +48,19 @@ const UserForm = () => {
 
     
     return (
-        <div>
+        <div className="page-container">
+            <h2>User Form</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" ref={nameRef} placeholder="Full Name" required />
                 <input type="email" ref={emailRef} placeholder="Email" required />
                 <input type="number" ref={ageRef} placeholder="Age" required />
                 <input type="text" ref={cityRef} placeholder="City" required />
                 <input type="text" ref={favTennisPlayerRef} placeholder="Favorite Tennis Player" required />
-                <button type="submit">Create User</button>
+                <button type="submit" className="btn">Submit User</button>
             </form>
-            {message && <p>{message}</p>}
+            <div className="message-container">
+                {message && <p className={`message ${message.includes("✅") ? "success" : "error"}`}>{message}</p>}
+            </div>
         </div>
     );
 };

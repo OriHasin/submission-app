@@ -3,9 +3,10 @@ import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { Request } from 'express';
 import { EnrichUserDto } from './dto/enrich-user.dto';
+import { TypeORMError } from 'typeorm';
 
 
-@Controller('users')
+@Controller('api/users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
@@ -24,11 +25,33 @@ export class UsersController {
         const response =  await this.usersService.create(enrichedData);
         return response;
     
-    } catch (error) {
-        throw new HttpException("Error creating user", HttpStatus.BAD_REQUEST);
+    } catch (error) {   // ERROR HANDLING
+        
+        if (error.response?.message) {
+          // DTO validation error
+          throw new HttpException(error.response.message, HttpStatus.BAD_REQUEST);
+        }
+        
+
+        if (error.code === '23505') {  
+          // TypeORM error: Unique constraint violation (duplicate email)
+          throw new HttpException('Email already exists!', HttpStatus.CONFLICT);
+        }
+    
+
+        if (error instanceof TypeORMError) {
+          // Handle other DB-related errors
+          throw new HttpException('Database error. Please try again later.', HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    
+
+        // Generic error fallback
+        throw new HttpException("An unexpected error occurred", HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }
 
+
+  
 
   @Get()
   async findAll() {

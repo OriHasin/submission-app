@@ -24,22 +24,22 @@ const UserTable = () => {
 
     // Fetch all users from the backend server once the component is mounted.
     const loadUsers = async () => {
-        const data = await fetchUsers();
-        setUsers(data);
+        const response = await fetchUsers();
+        setUsers(response.data);
         setLoading(false);
     };
 
 
     return (
-        <div>
+        <div className="page-container">
             <h2>Entities List</h2>
             
             {loading ? (
-                <p>Loading users...</p>
+                <p className="message">Loading users...</p>
             ) : users.length === 0 ? (
-                <p>No users available</p>
+                <p className="message">No users available</p>
             ) : (
-                <table border="1">
+                <table>
                     <thead>
                         <tr>
                             <th>Name</th>

@@ -3,12 +3,13 @@ import UserTable from "../components/UserTable";
 
 const UsersPage = () => {
   return (
-    <div>
-      <h1>Submitted Users</h1>
+    <div className="page-container">
       <UserTable />
-      <Link to="/">
-        <button>Go Back to Form</button>
-      </Link>
+      <div className="button-container">
+        <Link to="/">
+          <button>Go Back to Form</button>
+        </Link>
+      </div>
     </div>
   );
 };

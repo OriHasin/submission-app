@@ -1,68 +1,156 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* 🌟 Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+h2 {
+    font-size: 32px; 
+    font-weight: bold; 
+    color: #00a368; /* Guardz Green */
+    text-align: center; 
+    margin: 20px 0; 
+    letter-spacing: 1px; 
+    text-transform: capitalize; 
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    background-color: #282828; 
+    color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+nav {
+    background-color: #00875A; 
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background: #1e1e1e; 
+    padding: 25px; 
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 80px;  
+}
+
+input, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 16px;
+    border: 1px solid #00875A; 
+    background: #2a2a2a;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00a368;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    background-color: #00875A; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+    background-color: #006644; 
+}
+
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.success {
+    color: #00a368; 
+}
+
+.error {
+    color: #d32f2f; 
+}
+
+
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #2f2d2d; 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333; 
+}
+
+th {
+    background-color: #00875A; 
+    color: white;
+    min-width: 200px;
+}
+
+tr:nth-child(even) {
+    background-color: #232222; 
+}
+
+tr:hover {
+    background-color: #333333; 
+}
+
+.page-container {
+    margin-top: 100px; 
+    text-align: center;
+}
+
+/* Centering Buttons inside a div */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.button-container a {
+    text-decoration: none; 
+}
+
+.message-container {
+    margin-top: 10px; 
+    text-align: center;
+    min-height: 30px; 
 }

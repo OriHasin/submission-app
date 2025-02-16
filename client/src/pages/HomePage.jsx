@@ -3,12 +3,13 @@ import UserForm from "../components/UserForm";
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Submit User</h1>
+    <div className="page-container">
       <UserForm />
-      <Link to="/users">
-        <button>View Submitted Users</button>
-      </Link>
+      <div className="button-container">
+        <Link to="/users">
+          <button>View Submitted Users</button>
+        </Link>
+      </div>
     </div>
   );
 };
