@@ -10,7 +10,7 @@ async function bootstrap() {
   app.use(bodyParser.urlencoded({ extended: true }));         // Being able to parse application/x-www-form-urlencoded
   app.useGlobalPipes(new ValidationPipe({whitelist: true, transform: true}),);
   app.enableCors({
-    origin: "http://localhost",       // Allow only your React frontend
+    origin: ["http://localhost","http://34.31.136.203"],       // Allow only your React frontend
     methods: "GET,POST,PUT,DELETE",   // Allow specific HTTP methods
   });
 
