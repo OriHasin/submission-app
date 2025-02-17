@@ -4,7 +4,8 @@ A full-stack service for submit user form & view historical submitted users incl
 Built with NestJS, React + Vite, Nginx, Docker, and PostgreSQL.
 
 
-## GOAL - Learn Guardz stack **FAST BUT DEEP** in order develop submission service. **Focus on REAL learning not just on providing a solution**.
+## Our GOAL 
+Learn Guardz stack **FAST BUT DEEP** in order develop submission service.  **Focus on REAL learning not just on providing a solution**.
 
 ## Topics Covered In Learning:
  - JavaScript Basics (JS Async Programming, ES6 Modules, etc.)
