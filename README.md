@@ -7,7 +7,7 @@ A full-stack service for submit user form & view them (real-time updates) built 
 
 1. Clone the repository:
 ```bash
-git clone [<repository-url>](https://github.com/OriHasin/submission-app.git)
+git clone https://github.com/OriHasin/submission-app.git
 cd submission-app
 ```
 
