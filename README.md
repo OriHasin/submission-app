@@ -4,6 +4,35 @@ A full-stack service for submit user form & view historical submitted users incl
 Built with NestJS, React + Vite, Nginx, Docker, and PostgreSQL.
 
 
+## GOAL - Learn Guardz stack **FAST BUT DEEP** in order develop submission service. **Focus on REAL learning not just on providing a solution**.
+
+## Topics Covered In Learning:
+ - JavaScript Basics (JS Async Programming, ES6 Modules, etc.)
+ - NestJS Framework (TypeScript based)
+ - React Frontend Development
+ - Overview HTML & CSS syntax
+
+
+## Architecture Highlights
+- Guardz Beautiful UI Style!
+- Informative Popups For User Actions
+- CORS-enabled security
+- Environment-based configuration
+- Docker containerization
+- PostgreSQL management
+- Nginx reverse proxy
+- WebSocket integration
+
+
+## Tech Stack
+- **Frontend**: React + Vite
+- **Reverse Proxy**: Nginx
+- **Backend**: NestJS
+- **Database**: PostgreSQL
+- **Real-time**: Socket.io
+- **Deployment**: Docker & Docker Compose
+
+
 ### How To Run The Application
 
 1. Clone the repository:
@@ -36,25 +65,6 @@ VITE_SOCKET_URL=ws://server-ip:8080
 docker-compose up --build -d
 ```
 
-## Tech Stack
-
-- **Frontend**: React + Vite
-- **Reverse Proxy**: Nginx
-- **Backend**: NestJS
-- **Database**: PostgreSQL
-- **Real-time**: Socket.io
-- **Deployment**: Docker & Docker Compose
-
-
-## Architecture Highlights
-- Guardz Beautiful UI Style!
-- Informative Error Popups
-- CORS-enabled security
-- Environment-based configuration
-- Docker containerization
-- PostgreSQL management
-- Nginx reverse proxy
-- WebSocket integration
 
 ## Shutdown
 
