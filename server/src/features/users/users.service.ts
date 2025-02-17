@@ -15,7 +15,7 @@ export class UsersService {
               private readonly socket: SocketGateway) {}
 
 
-  async create(enrichedData: EnrichUserDto) {
+  async saveToDB(enrichedData: EnrichUserDto) {
     const user = this.userRepository.create(enrichedData);                            // create a new user instance (entity)
     await this.userRepository.save(user);                                             // save the user to the db
 

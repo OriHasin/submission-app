@@ -3,6 +3,8 @@ import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 import * as bodyParser from 'body-parser';
 
+export const corsOrigin = process.env.FRONTEND_ORIGIN;;
+
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -10,7 +12,7 @@ async function bootstrap() {
   app.use(bodyParser.urlencoded({ extended: true }));         // Being able to parse application/x-www-form-urlencoded
   app.useGlobalPipes(new ValidationPipe({whitelist: true, transform: true}),);
   app.enableCors({
-    origin: ["http://localhost","http://34.31.136.203"],       // Allow only your React frontend
+    origin: corsOrigin,       // Allow only your React frontend
     methods: "GET,POST,PUT,DELETE",   // Allow specific HTTP methods
   });
 

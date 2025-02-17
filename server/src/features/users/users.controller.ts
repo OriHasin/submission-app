@@ -22,7 +22,7 @@ export class UsersController {
           userAgent: req.headers['user-agent'],
         };
 
-        const response =  await this.usersService.create(enrichedData);
+        const response =  await this.usersService.saveToDB(enrichedData);
         return response;
     
     } catch (error) {   // ERROR HANDLING

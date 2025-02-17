@@ -1,5 +1,14 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ValueTransformer } from 'typeorm';
 import { Exclude } from 'class-transformer';
+
+
+
+const DateFormatTransformer: ValueTransformer = {
+  to: (value: Date) => value,  // Stores regular date
+  from: (value: Date) => value.toISOString().replace('T', ' ').split('.')[0]  // Returns formatted date
+};
+
+
 
 @Entity()
 export class User {
@@ -25,7 +34,7 @@ export class User {
   
   // Enriched Data from Request
 
-  @CreateDateColumn()
+  @CreateDateColumn({transformer: DateFormatTransformer})
   createdAt: Date;
 
   @Exclude()
