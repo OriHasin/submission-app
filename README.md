@@ -1,19 +1,22 @@
 # Guardz Submission Service
 
-A full-stack service for submit user form & view historical submitted users including real-time updates. 
+A full-stack service for submit user form & view historical submitted users including real-time updates.  
 Built with NestJS, React + Vite, Nginx, Docker, and PostgreSQL.
 
 
-## Introduction 
-From Python to JavaScript!
-Coming from a heavy Python & Backend background, I had zero experience with JavaScript frameworks and frontend development.
-This project was my deep-dive into React, NestJS, and full-stack development.  **Focus on REAL learning not just on providing a solution**.
+## 🚀 From Python to JavaScript!
 
-**Our GOAL** - Dive & Learn **FAST BUT DEEP** in order to deliver robust Submission Service. 
+Coming from a heavy Python & Backend background, I had zero experience with JavaScript frameworks and frontend development.  
+This project was my deep-dive into React, NestJS, and full-stack development. ✨ **Focus on REAL learning — not just on providing a solution.**
 
+
+## 🎯 Our GOAL
+
+Dive & Learn **FAST BUT DEEP** to deliver a robust Submission Service.
 
 
 ## Topics Covered In Learning:
+
  - JavaScript Basics (JS Async Programming, ES6 Modules, etc.)
  - NestJS Framework (TypeScript based)
  - React Frontend Development
@@ -21,6 +24,7 @@ This project was my deep-dive into React, NestJS, and full-stack development.  *
 
 
 ## Architecture Highlights
+
 - Guardz Beautiful UI Style!
 - Informative Popups For User Actions
 - CORS-enabled security
@@ -32,6 +36,7 @@ This project was my deep-dive into React, NestJS, and full-stack development.  *
 
 
 ## Tech Stack
+
 - **Frontend**: React + Vite
 - **Reverse Proxy**: Nginx
 - **Backend**: NestJS
