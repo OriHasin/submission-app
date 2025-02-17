@@ -15,7 +15,7 @@ Coming from a heavy Python & Backend background, I had zero experience with Java
 Dive & Learn **FAST BUT DEEP** to deliver a robust Submission Service.
 
 
-## Topics Covered In Learning:
+## 📚 Topics Covered In Learning:
 
  - JavaScript Basics (JS Async Programming, ES6 Modules, etc.)
  - NestJS Framework (TypeScript based)
@@ -23,7 +23,7 @@ Dive & Learn **FAST BUT DEEP** to deliver a robust Submission Service.
  - Overview HTML & CSS syntax
 
 
-## Architecture Highlights
+## 🏗️ Highlights
 
 - Guardz Beautiful UI Style!
 - Informative Popups For User Actions
@@ -35,7 +35,7 @@ Dive & Learn **FAST BUT DEEP** to deliver a robust Submission Service.
 - WebSocket integration
 
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Frontend**: React + Vite
 - **Reverse Proxy**: Nginx
@@ -45,7 +45,7 @@ Dive & Learn **FAST BUT DEEP** to deliver a robust Submission Service.
 - **Deployment**: Docker & Docker Compose
 
 
-### How To Run The Application
+### 🚀 How To Run The Application
 
 1. Clone the repository:
 ```bash
