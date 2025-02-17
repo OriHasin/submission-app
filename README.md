@@ -5,7 +5,8 @@ Built with NestJS, React + Vite, Nginx, Docker, and PostgreSQL.
 
 
 ## Our GOAL 
-Learn Guardz stack **FAST BUT DEEP** in order develop submission service.  **Focus on REAL learning not just on providing a solution**.
+Learn Guardz stack **FAST BUT DEEP** in order develop robust submission service.  **Focus on REAL learning not just on providing a solution**.
+**No previous knowledge** on JavaScript and UI Development (Python frick :) )
 
 ## Topics Covered In Learning:
  - JavaScript Basics (JS Async Programming, ES6 Modules, etc.)
