@@ -68,7 +68,7 @@ POSTGRES_PORT=5432
 
 - Create `client/.env`:
 ```
-VITE_API_URL=http://server-ip:8080
+VITE_API_URL=http://server-ip:8080/api
 VITE_SOCKET_URL=ws://server-ip:8080
 ```
 
