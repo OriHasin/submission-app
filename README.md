@@ -1,4 +1,4 @@
-# Guardz Submission Service
+# Submission Service
 
 A full-stack service for submit user form & view historical submitted users including real-time updates.  
 Built with NestJS, React + Vite, Nginx, Docker, and PostgreSQL.
