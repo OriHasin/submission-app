@@ -7,7 +7,7 @@ Built with NestJS, React + Vite, Nginx, Docker, and PostgreSQL.
 ## 🚀 From Python to JavaScript!
 
 Coming from a heavy Python & Backend background, I had zero experience with JavaScript and Frontend development. This project was my deep-dive into React, NestJS, and full-stack development.  
-✨ **Focus on REAL learning — not just on providing a solution.**
+✨ **Focus on REAL learning — not just on providing an app.**
 
 
 ## 🎯 Our GOAL
